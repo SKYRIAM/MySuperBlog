@@ -16,6 +16,7 @@ login_manager = LoginManager()
 def load_user(user_id):
     from Myambumy.models import User
     user = User.query.get(int(user_id))
+    print('opopop'+user_id)
     return user
 
 login_manager.login_view = 'auth.login'

@@ -15,6 +15,7 @@ class Operations:
     CONFIRM = 'confirm'
     RESET_PASSWORD = 'reset-password'
     CHANGE_EMAIL = 'change-email'
+    CHANGE_PASSWORD='change-password'
 
 
 class BaseConfig:
@@ -40,7 +41,7 @@ class BaseConfig:
     MAIL_USE_SSL = True
     MAIL_USERNAME = os.getenv('MAIL_USERNAME')
     MAIL_PASSWORD = os.getenv('MAIL_PASSWORD')
-    MAIL_DEFAULT_SENDER = ('Albumy Admin', MAIL_USERNAME)
+    MAIL_DEFAULT_SENDER = ('Canman', MAIL_USERNAME) #设置默认发送人
 
 
 class DevelopmentConfig(BaseConfig):

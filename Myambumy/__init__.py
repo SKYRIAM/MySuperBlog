@@ -1,4 +1,5 @@
 import  os
+import click
 from flask import Flask
 from Myambumy.settings import config
 from Myambumy.extensions import db,mail,moment,bootstrap,login_manager
@@ -6,6 +7,8 @@ from Myambumy.blueprints.user import user_bp
 from Myambumy.blueprints.main import main_bp
 from Myambumy.blueprints.auth import auth_bp
 from Myambumy.models import User
+from Myambumy.emails import  send_confirm_email
+from Myambumy.utils import generate_token,vaildate_token
 
 
 def create_app(config_name=None):
@@ -41,7 +44,7 @@ def register_blueprints(app):
 def register_shell_context(app):
     @app.shell_context_processor
     def make_shell_context():
-        return dict(db=db,User=User)
+        return dict(db=db,User=User,generate_token=generate_token)
 
 def register_template_context(app):
     pass
@@ -50,7 +53,21 @@ def register_errorhandlers(app):
     pass
 
 def register_commands(app):
-    pass
+    @app.cli.command()
+    @click.option('--drop',is_flag=True,help='Create after drop.')
+    def initdb(drop):
+        if drop:
+            click.confirm('This operation will delete the database, do you want to continue?', abort=True)
+            db.drop_all()
+            click.echo('Drop tables.')
+        db.create_all()
+        click.echo('Initialized database.')
 
+    def init():
+        """Initialize Albumy."""
+        click.echo('Initializing the database...')
+        db.create_all()
+
+        click.echo('Done.')
 
 

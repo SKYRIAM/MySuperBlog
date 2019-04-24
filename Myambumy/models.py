@@ -3,10 +3,10 @@ from werkzeug.security import generate_password_hash,check_password_hash
 from Myambumy.extensions import db
 from datetime import datetime
 
-class User(UserMixin):
+class User(db.Model,UserMixin):
     id = db.Column(db.Integer,primary_key=True)
     username = db.Column(db.String(20),unique=True,index=True) #index设为True建立索引
-    email = db.Column(db.String(254),unique=True,index=True)
+    email = db.Column(db.String(254),index=True)
     password_hash = db.Column(db.String(128))
     name = db.Column(db.String(30))
     website = db.Column(db.String(50))
