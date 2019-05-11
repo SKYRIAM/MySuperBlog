@@ -2,32 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4a89d11-4172-4101-8c0b-01c12c09d95f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myambumy/decorations.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myambumy/emails.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myambumy/templates/auth/change_email.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myambumy/templates/auth/change_password.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myambumy/templates/auth/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myambumy/templates/auth/reset_password.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myambumy/templates/auth/text.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myambumy/templates/emails/change_email.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myambumy/templates/emails/change_email.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myambumy/templates/emails/change_password.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myambumy/templates/emails/change_password.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myambumy/templates/emails/confirm.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myambumy/templates/emails/confirm.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myambumy/templates/emails/reset_password.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myambumy/templates/emails/reset_password.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myambumy/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data-dev.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/blueprints/ajax.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/fakes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/forms/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/templates/errors/400.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/templates/errors/403.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/templates/errors/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/templates/errors/413.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/templates/errors/500.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/templates/macros.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/templates/main/_comment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/templates/main/_photo_sidebar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/templates/main/collectors.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/templates/main/photo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/templates/main/profile_popup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/templates/main/tag.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/templates/main/upload.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/templates/user/_header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/templates/user/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Myambumy/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Myambumy/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Myambumy/blueprints/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/Myambumy/blueprints/auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myambumy/blueprints/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Myambumy/blueprints/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myambumy/blueprints/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/Myambumy/blueprints/user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myambumy/decorations.py" beforeDir="false" afterPath="$PROJECT_DIR$/Myambumy/decorations.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Myambumy/extensions.py" beforeDir="false" afterPath="$PROJECT_DIR$/Myambumy/extensions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Myambumy/forms/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/Myambumy/forms/auth.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Myambumy/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Myambumy/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Myambumy/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Myambumy/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myambumy/static/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Myambumy/static/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Myambumy/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Myambumy/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myambumy/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/Myambumy/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-dev.db" beforeDir="false" afterPath="$PROJECT_DIR$/data-dev.db" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,53 +56,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Myambumy/static/js/script.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="722">
+              <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Myambumy/blueprints/auth.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3387">
-              <caret line="182" column="11" selection-start-line="182" selection-start-column="11" selection-end-line="182" selection-end-column="11" />
-              <folding>
-                <element signature="e#0#66#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Myambumy/templates/auth/change_password.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Myambumy/templates/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="58" column="87" selection-start-line="58" selection-start-column="87" selection-end-line="58" selection-end-column="87" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Myambumy/utils.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="42" column="58" selection-start-line="42" selection-start-column="58" selection-end-line="42" selection-end-column="58" />
-              <folding>
-                <element signature="e#115#185#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Myambumy/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="18" column="61" selection-start-line="18" selection-start-column="61" selection-end-line="18" selection-end-column="61" />
+            <state relative-caret-position="413">
+              <caret line="169" column="27" selection-start-line="169" selection-start-column="27" selection-end-line="169" selection-end-column="27" />
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
               </folding>
@@ -106,24 +78,58 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Myambumy/forms/auth.py">
+        <entry file="file://$PROJECT_DIR$/.flaskenv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="34" column="103" selection-start-line="34" selection-start-column="103" selection-end-line="34" selection-end-column="103" />
+            <state relative-caret-position="19">
+              <caret line="1" column="21" lean-forward="true" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Myambumy/blueprints/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1767">
+              <caret line="101" selection-start-line="101" selection-end-line="101" />
               <folding>
-                <element signature="e#0#31#0" expanded="true" />
+                <element signature="e#0#112#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Myambumy/settings.py">
+        <entry file="file://$PROJECT_DIR$/Myambumy/fakes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+            <state relative-caret-position="1691">
+              <caret line="96" column="71" selection-start-line="96" selection-start-column="71" selection-end-line="96" selection-end-column="71" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Myambumy/templates/main/_photo_sidebar.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2204">
+              <caret line="116" column="30" selection-start-line="116" selection-start-column="30" selection-end-line="116" selection-end-column="30" />
+              <folding>
+                <element signature="e#186#192#0" expanded="true" />
+                <element signature="e#342#348#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Myambumy/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2280">
+              <caret line="133" column="55" selection-start-line="133" selection-start-column="55" selection-end-line="133" selection-end-column="55" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -142,6 +148,13 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>resend_confirm_email</find>
+      <find>ALBUMY_ADMIN_EMAIL</find>
+      <find>url_for</find>
+      <find>delete_photo</find>
+      <find>tag</find>
+      <find>new_tag</find>
+      <find>show</find>
+      <find>user.</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -157,40 +170,55 @@
         <option value="$PROJECT_DIR$/Myambumy/templates/index.html" />
         <option value="$PROJECT_DIR$/Myambumy/templates/register.html" />
         <option value="$PROJECT_DIR$/Myambumy/templates/main/index.html" />
-        <option value="$PROJECT_DIR$/Myambumy/blueprints/user.py" />
-        <option value="$PROJECT_DIR$/Myambumy/blueprints/main.py" />
         <option value="$PROJECT_DIR$/Myambumy/templates/auth/register.html" />
         <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/Myambumy/extensions.py" />
-        <option value="$PROJECT_DIR$/Myambumy/__init__.py" />
         <option value="$PROJECT_DIR$/Myambumy/templates/auth/login.html" />
         <option value="$PROJECT_DIR$/Myambumy/templates/emails/confirm.html" />
         <option value="$PROJECT_DIR$/Myambumy/templates/emails/confirm.txt" />
-        <option value="$PROJECT_DIR$/Myambumy/models.py" />
         <option value="$PROJECT_DIR$/Myambumy/templates/auth/text.html" />
-        <option value="$PROJECT_DIR$/Myambumy/decorations.py" />
         <option value="$PROJECT_DIR$/Myambumy/templates/auth/reset_password.html" />
         <option value="$PROJECT_DIR$/Myambumy/templates/emails/change_email.html" />
         <option value="$PROJECT_DIR$/Myambumy/templates/auth/change_email_confirm.html" />
         <option value="$PROJECT_DIR$/Myambumy/templates/auth/change_email.html" />
         <option value="$PROJECT_DIR$/Myambumy/forms/auth.py" />
-        <option value="$PROJECT_DIR$/Myambumy/settings.py" />
         <option value="$PROJECT_DIR$/Myambumy/emails.py" />
         <option value="$PROJECT_DIR$/Myambumy/templates/auth/change_password.html" />
         <option value="$PROJECT_DIR$/Myambumy/templates/emails/change_password.html" />
         <option value="$PROJECT_DIR$/Myambumy/templates/emails/change_password.txt" />
         <option value="$PROJECT_DIR$/Myambumy/templates/emails/change_email.txt" />
-        <option value="$PROJECT_DIR$/Myambumy/templates/base.html" />
-        <option value="$PROJECT_DIR$/Myambumy/utils.py" />
         <option value="$PROJECT_DIR$/Myambumy/blueprints/auth.py" />
+        <option value="$PROJECT_DIR$/Myambumy/decorations.py" />
+        <option value="$PROJECT_DIR$/Myambumy/templates/main/update.html" />
+        <option value="$PROJECT_DIR$/Myambumy/templates/main/upload.html" />
+        <option value="$PROJECT_DIR$/Myambumy/extensions.py" />
+        <option value="$PROJECT_DIR$/Myambumy/settings.py" />
+        <option value="$PROJECT_DIR$/Myambumy/templates/models.html" />
+        <option value="$PROJECT_DIR$/Myambumy/forms/main.py" />
+        <option value="$PROJECT_DIR$/Myambumy/blueprints/user.py" />
+        <option value="$PROJECT_DIR$/Myambumy/templates/user/index.html" />
+        <option value="$PROJECT_DIR$/Myambumy/templates/user/_header.html" />
+        <option value="$PROJECT_DIR$/Myambumy/templates/main/photo.html" />
+        <option value="$PROJECT_DIR$/Myambumy/utils.py" />
+        <option value="$PROJECT_DIR$/Myambumy/templates/main/tag.html" />
+        <option value="$PROJECT_DIR$/Myambumy/templates/base.html" />
+        <option value="$PROJECT_DIR$/Myambumy/templates/main/profile_popup.html" />
+        <option value="$PROJECT_DIR$/Myambumy/static/js/script.js" />
+        <option value="$PROJECT_DIR$/Myambumy/blueprints/ajax.py" />
+        <option value="$PROJECT_DIR$/Myambumy/templates/main/_comment.html" />
+        <option value="$PROJECT_DIR$/Myambumy/templates/main/_photo_sidebar.html" />
+        <option value="$PROJECT_DIR$/Myambumy/templates/main/collectors.html" />
+        <option value="$PROJECT_DIR$/Myambumy/templates/macros.html" />
+        <option value="$PROJECT_DIR$/Myambumy/fakes.py" />
+        <option value="$PROJECT_DIR$/Myambumy/blueprints/main.py" />
+        <option value="$PROJECT_DIR$/Myambumy/__init__.py" />
+        <option value="$PROJECT_DIR$/Myambumy/models.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="457" />
-    <option name="y" value="67" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="950" />
     <option name="width" value="980" />
-    <option name="height" value="1000" />
+    <option name="height" value="1090" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -217,33 +245,7 @@
               <item name="Myambumy" type="b2602c69:ProjectViewProjectNode" />
               <item name="Myambumy" type="462c0819:PsiDirectoryNode" />
               <item name="Myambumy" type="462c0819:PsiDirectoryNode" />
-              <item name="blueprints" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Myambumy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Myambumy" type="462c0819:PsiDirectoryNode" />
-              <item name="Myambumy" type="462c0819:PsiDirectoryNode" />
-              <item name="forms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Myambumy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Myambumy" type="462c0819:PsiDirectoryNode" />
-              <item name="Myambumy" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Myambumy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Myambumy" type="462c0819:PsiDirectoryNode" />
-              <item name="Myambumy" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Myambumy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Myambumy" type="462c0819:PsiDirectoryNode" />
-              <item name="Myambumy" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="emails" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Myambumy" type="b2602c69:ProjectViewProjectNode" />
@@ -270,16 +272,16 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Myambumy/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Myambumy" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Flask\Myambumy\Myambumy" />
       <recent name="F:\Flask\Myambumy\Myambumy\templates" />
       <recent name="F:\Flask\Myambumy" />
-      <recent name="F:\Flask\Myambumy\Myambumy" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\Flask\Myambumy\Myambumy\templates\main" />
@@ -314,17 +316,24 @@
       <workItem from="1555947064989" duration="13132000" />
       <workItem from="1556001646476" duration="21691000" />
       <workItem from="1556067302800" duration="17772000" />
+      <workItem from="1556154558723" duration="22613000" />
+      <workItem from="1556415984478" duration="35131000" />
+      <workItem from="1556585102438" duration="26478000" />
+      <workItem from="1556673649959" duration="7243000" />
+      <workItem from="1556929125120" duration="9530000" />
+      <workItem from="1557323668959" duration="671000" />
+      <workItem from="1557537364585" duration="1195000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72941000" />
+    <option name="totallyTimeSpent" value="175802000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="878" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13404825" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.092493296" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -336,54 +345,44 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.2927171" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.36980608" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.22022161" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="11" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.327748" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32734805" />
+      <window_info anchor="right" id="SciView" order="4" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16756032" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.36237898" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32913166" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32963988" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.2927171" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.19529086" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="11" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.32918397" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32734805" />
+      <window_info anchor="right" id="SciView" order="4" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Myambumy/static/js/script.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Pipfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Myambumy/templates/auth/register.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="89">
@@ -394,34 +393,10 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/.flaskenv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Pipfile.lock">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="363">
           <caret line="59" column="28" lean-forward="true" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Myambumy/blueprints/user.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="56" lean-forward="true" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Myambumy/blueprints/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="46" lean-forward="true" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -436,36 +411,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Myambumy/decorations.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="15" lean-forward="true" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#76#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Myambumy/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="63" column="43" selection-start-line="63" selection-start-column="43" selection-end-line="63" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Myambumy/extensions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="21" column="38" lean-forward="true" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -508,26 +453,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Myambumy/forms/auth.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="34" column="103" selection-start-line="34" selection-start-column="103" selection-end-line="34" selection-end-column="103" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Myambumy/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -583,23 +508,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Myambumy/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="58" column="87" selection-start-line="58" selection-start-column="87" selection-end-line="58" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Myambumy/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="42" column="58" selection-start-line="42" selection-start-column="58" selection-end-line="42" selection-end-column="58" />
-          <folding>
-            <element signature="e#115#185#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Myambumy/templates/auth/change_password.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -607,22 +515,241 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Myambumy/models.py">
+    <entry file="file://$PROJECT_DIR$/Myambumy/blueprints/auth.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="18" column="61" selection-start-line="18" selection-start-column="61" selection-end-line="18" selection-end-column="61" />
+        <state relative-caret-position="317">
+          <caret line="185" lean-forward="true" selection-start-line="185" selection-end-line="185" />
           <folding>
-            <element signature="e#0#33#0" expanded="true" />
+            <element signature="e#0#66#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Myambumy/blueprints/auth.py">
+    <entry file="file://$PROJECT_DIR$/Myambumy/templates/errors/400.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/forms/auth.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3387">
-          <caret line="182" column="11" selection-start-line="182" selection-start-column="11" selection-end-line="182" selection-end-column="11" />
+        <state relative-caret-position="234">
+          <caret line="34" column="103" selection-start-line="34" selection-start-column="103" selection-end-line="34" selection-end-column="103" />
           <folding>
-            <element signature="e#0#66#0" expanded="true" />
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/decorations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/extensions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/forms/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pipfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/templates/user/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/templates/user/_header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="91" column="16" selection-start-line="91" selection-start-column="4" selection-end-line="91" selection-end-column="16" />
+          <folding>
+            <element signature="e#115#125#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/templates/main/tag.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="42" lean-forward="true" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="54" column="101" lean-forward="true" selection-start-line="54" selection-start-column="101" selection-end-line="54" selection-end-column="101" />
+          <folding>
+            <element signature="e#2370#2376#0" expanded="true" />
+            <element signature="e#2376#2382#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/templates/main/upload.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/blueprints/user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="50" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/templates/main/profile_popup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+          <folding>
+            <element signature="e#446#452#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/blueprints/ajax.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/templates/main/photo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="17" column="91" selection-start-line="17" selection-start-column="91" selection-end-line="17" selection-end-column="91" />
+          <folding>
+            <element signature="e#3131#3138#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/templates/main/_comment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="68" column="35" selection-start-line="68" selection-start-column="35" selection-end-line="68" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/templates/macros.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/templates/main/collectors.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/static/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/blueprints/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1767">
+          <caret line="101" selection-start-line="101" selection-end-line="101" />
+          <folding>
+            <element signature="e#0#112#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/fakes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1691">
+          <caret line="96" column="71" selection-start-line="96" selection-start-column="71" selection-end-line="96" selection-end-column="71" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/templates/main/_photo_sidebar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2204">
+          <caret line="116" column="30" selection-start-line="116" selection-start-column="30" selection-end-line="116" selection-end-column="30" />
+          <folding>
+            <element signature="e#186#192#0" expanded="true" />
+            <element signature="e#342#348#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2280">
+          <caret line="133" column="55" selection-start-line="133" selection-start-column="55" selection-end-line="133" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.flaskenv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="21" lean-forward="true" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="169" column="27" selection-start-line="169" selection-start-column="27" selection-end-line="169" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
           </folding>
         </state>
       </provider>
