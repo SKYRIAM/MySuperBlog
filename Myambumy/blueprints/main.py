@@ -1,5 +1,5 @@
 from flask import Blueprint,render_template,request,current_app,send_from_directory,flash,redirect,url_for,abort
-from Myambumy.models import User,Photo,Comment,Tag,Collect,Article,Collect_article,Notification
+from Myambumy.models import User,Photo,Comment,Tag,Collect,Article,Collect_article,Notification,Follow
 from Myambumy.decorations import confirm_required,permission_required
 from flask_login import  login_required,current_user
 from Myambumy.utils import resize_image,rename_image,flash_errors
@@ -7,16 +7,49 @@ import os
 from Myambumy.forms.main import CommentForm
 from Myambumy.extensions import db
 from Myambumy.forms.main import DescriptionForm,TagForm,ArticleForm
+from sqlalchemy.sql.expression import func
 from Myambumy.notifications import push_comment_notification,push_collect_notification,push_comment_notification_article
 main_bp  = Blueprint('main',__name__)
 
 @main_bp.route('/')
 def index():
-    return render_template('/main/index.html')
+    if request.args.get('type') == 'article':
+        if current_user.is_authenticated:
+            page = request.args.get('page', 1, type=int)
+            per_page = current_app.config['ALBUMY_PHOTO_PER_PAGE']
+            pagination = Article.query \
+                .join(Follow, Follow.followed_id == Article.author_id) \
+                .filter(Follow.follower_id == current_user.id) \
+                .order_by(Article.timestamp.desc()) \
+                .paginate(page, per_page)
+            articles = pagination.items
+        else:
+            pagination = None
+            articles = None
+        tags = Tag.query.join(Tag.articles).group_by(Tag.id).order_by(func.count(Article.id).desc()).limit(10)
+        return render_template('main/index_article.html', pagination=pagination, articles=articles, tags=tags, Collect=Collect)
 
-@main_bp.route('/expplore')
+    else:
+        if current_user.is_authenticated:
+            page = request.args.get('page', 1, type=int)
+            per_page = current_app.config['ALBUMY_PHOTO_PER_PAGE']
+            pagination = Photo.query \
+                .join(Follow, Follow.followed_id == Photo.author_id) \
+                .filter(Follow.follower_id == current_user.id) \
+                .order_by(Photo.timestamp.desc()) \
+                .paginate(page, per_page)
+            photos = pagination.items
+        else:
+            pagination = None
+            photos = None
+        tags = Tag.query.join(Tag.photos).group_by(Tag.id).order_by(func.count(Photo.id).desc()).limit(10)
+        return render_template('main/index.html', pagination=pagination, photos=photos, tags=tags, Collect=Collect)
+
+
+@main_bp.route('/explore')
 def explore():
-    return render_template('/main/index.html')
+    photos = Photo.query.order_by(func.random()).limit(12)
+    return render_template('main/explore.html', photos=photos)
 
 
 
@@ -383,15 +416,18 @@ def new_comment(photo_id):
         if replied_id:
             comment.replied = Comment.query.get_or_404(replied_id)
             if request.args.get('type') == 'article':
-                push_comment_notification_article(article_id=photo_id,receiver=comment.replied.author)
+                if comment.replied.author.receive_comment_notification and photo.author.receive_comment_notification:
+                    push_comment_notification_article(article_id=photo_id,receiver=comment.replied.author)
             else:
-                push_comment_notification(photo_id=photo.id, receiver=comment.replied.author)
+                if comment.replied.author.receive_comment_notification and photo.author.receive_comment_notification:
+                    push_comment_notification(photo_id=photo.id, receiver=comment.replied.author)
         db.session.add(comment)
         db.session.commit()
         flash('Comment published.', 'success')
 
         if request.args.get('type') == 'article':
             if current_user != article.author:
+
                 push_comment_notification_article(photo_id, receiver=article.author, page=page)
         else:
             if current_user != photo.author:

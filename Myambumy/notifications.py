@@ -36,3 +36,12 @@ def push_collect_notification(collector, photo_id, receiver):
     notification = Notification(message=message, receiver=receiver)
     db.session.add(notification)
     db.session.commit()
+
+def push_collect_notification_article(collector, article_id, receiver):
+    message = 'User <a href="%s">%s</a> collected your <a href="%s">article</a>' % \
+              (url_for('user.index', username=collector.username),
+               collector.username,
+               url_for('main.show_article', article_id=article_id))
+    notification = Notification(message=message, receiver=receiver)
+    db.session.add(notification)
+    db.session.commit()

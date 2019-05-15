@@ -110,6 +110,8 @@ class User(db.Model,UserMixin):
     location = db.Column(db.String(50))
     bio = db.Column(db.String(120))#自我介绍
     member_since = db.Column(db.DateTime,default=datetime.utcnow)
+    avatar_raw = db.Column(db.String(64))
+
     #建立和article一对多的关系
     articles = db.relationship('Article',back_populates='author',cascade='all')#设立外键和级联
     #建立和photo一对多的关系
@@ -124,6 +126,13 @@ class User(db.Model,UserMixin):
     avatar_s = db.Column(db.String(64))
     avatar_m = db.Column(db.String(64))
     avatar_l = db.Column(db.String(64))
+    #公开收藏开关
+    public_collections = db.Column(db.Boolean, default=True)
+    #设置消息开关
+    public_collections = db.Column(db.Boolean, default=True)
+    receive_comment_notification = db.Column(db.Boolean, default=True)
+    receive_follow_notification = db.Column(db.Boolean, default=True)
+    receive_collect_notification = db.Column(db.Boolean, default=True)
     #收藏
     collections = db.relationship('Collect', back_populates='collector', cascade='all')
     collections_article = db.relationship('Collect_article', back_populates='collector', cascade='all')
@@ -140,6 +149,10 @@ class User(db.Model,UserMixin):
 
     def vaildate_password(self,password):
         return check_password_hash(self.password_hash,password)
+
+    def validate_password(self, password):
+        return check_password_hash(self.password_hash, password)
+
     #构造函数
     def __init__(self,**kwargs):
         super(User,self).__init__(**kwargs)
@@ -324,6 +337,14 @@ def delete_photos(**kwargs):
         if os.path.exists(path):  # not every filename map a unique file
             os.remove(path)
 
+@db.event.listens_for(User, 'after_delete', named=True)
+def delete_avatars(**kwargs):
+    target = kwargs['target']
+    for filename in [target.avatar_s, target.avatar_m, target.avatar_l, target.avatar_raw]:
+        if filename is not None:  # avatar_raw may be None
+            path = os.path.join(current_app.config['AVATARS_SAVE_PATH'], filename)
+            if os.path.exists(path):  # not every filename map a unique file
+                os.remove(path)
 
 
 
