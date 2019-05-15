@@ -66,7 +66,7 @@
         </div>
         {% if current_user == photo.author %}
             <div id="tag-form">
-                <form action="{{ url_for('.new_tag', photo_id=photo.id) }}" method="post">
+                <form action="{{ url_for('.new_tag2', photo_id=photo.id) }}" method="post">
                     {{ tag_form.csrf_token }}
                     {{ render_field(tag_form.tag) }}
                     <a class="btn btn-light btn-sm" id="cancel-tag">Cancel</a>
@@ -76,7 +76,7 @@
                     <hr>
                     {% for tag in photo.tags %}
                         <a class="dead-link" href="#!"
-                           data-href="{{ url_for('.delete_tag', photo_id=photo.id, tag_id=tag.id) }}"
+                           data-href="{{ url_for('.delete2_tag', photo_id=photo.id, tag_id=tag.id) }}"
                            data-toggle="modal" data-target="#confirm-delete" title="Delete tag">
                 <span class="badge badge-danger">
                 {{ tag.name }} <span class="oi oi-trash" aria-hidden="true"></span>

@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% from 'bootstrap/pagination.html' import render_pagination %}
+{% from 'macros.html' import article_card %}
+
+{% block title %}{{ user.name }}'s collection{% endblock %}
+
+{% block content %}
+    {% include 'user/_header.html' %}
+    <div class="row">
+        <div>
+            <a href="{{ url_for('user.show_collections', username=user.username) }}"><small >{{ count_photo }}</small> photos  |</a>
+            <a href="{{ url_for('user.show_collections_article', username=user.username) }}"><small >{{collects|length }}</small> articles  </a>
+        </div>
+
+        <div class="col-md-12">
+            {% if collects %}
+                {% for collect in collects %}
+                    {{ article_card(collect.collected_article) }}
+                {% endfor %}
+            {% else %}
+                <div class="tip">
+                    <h3>No collection.</h3>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+    {% if collections %}
+        <div class="page-footer">
+            {{ render_pagination(pagination, align='center') }}
+        </div>
+    {% endif %}
+{% endblock %}

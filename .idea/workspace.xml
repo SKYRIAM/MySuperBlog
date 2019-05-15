@@ -2,35 +2,454 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4a89d11-4172-4101-8c0b-01c12c09d95f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Myambumy/blueprints/ajax.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myambumy/fakes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myambumy/forms/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myambumy/templates/errors/400.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myambumy/templates/errors/403.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myambumy/templates/errors/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myambumy/templates/errors/413.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myambumy/templates/errors/500.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myambumy/templates/macros.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myambumy/templates/main/_comment.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myambumy/templates/main/_photo_sidebar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myambumy/templates/main/collectors.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myambumy/templates/main/photo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myambumy/templates/main/profile_popup.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myambumy/templates/main/tag.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myambumy/templates/main/upload.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myambumy/templates/user/_header.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myambumy/templates/user/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/CHANGES.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/adapters/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/build-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/ckeditor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/contents.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/af.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/az.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/bn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/bs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/cy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/de-ch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/en-au.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/en-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/en-gb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/eo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/es-mx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/fo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/fr-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/gu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/hi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/is.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/ka.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/km.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/ku.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/mk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/mn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/ms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/no.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/oc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/pt-br.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/si.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/sq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/sr-latn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/sr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/tt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/ug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/lang/zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/af.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/az.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/cy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/de-ch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/en-au.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/en-gb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/eo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/es-mx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/fo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/fr-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/gu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/hi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/km.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/ku.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/mk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/mn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/no.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/oc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/pt-br.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/si.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/sq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/sr-latn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/sr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/tt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/ug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/a11yhelp/dialogs/lang/zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/about/dialogs/about.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/about/dialogs/hidpi/logo_ckeditor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/about/dialogs/logo_ckeditor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/clipboard/dialogs/paste.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/dialogs/codesnippet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/icons/codesnippet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/icons/hidpi/codesnippet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/az.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/de-ch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/en-au.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/en-gb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/eo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/es-mx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/fr-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/km.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/ku.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/no.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/oc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/pt-br.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/sq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/tt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/ug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/lang/zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/codesnippet/samples/codesnippet.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/dialog/dialogDefinition.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/filebrowser/plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/filetools/dev/uploaddebugger.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/filetools/lang/az.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/filetools/lang/ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/filetools/lang/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/filetools/lang/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/filetools/lang/de-ch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/filetools/lang/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/filetools/lang/en-au.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/filetools/lang/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/filetools/lang/eo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/filetools/lang/es-mx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/filetools/lang/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/filetools/lang/eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/filetools/lang/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/filetools/lang/gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/filetools/lang/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/filetools/lang/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/filetools/lang/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/filetools/lang/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/filetools/lang/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/filetools/lang/km.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/filetools/lang/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/filetools/lang/ku.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/filetools/lang/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/filetools/lang/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/filetools/lang/oc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/filetools/lang/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/filetools/lang/pt-br.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/filetools/lang/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/filetools/lang/ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/filetools/lang/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/filetools/lang/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/filetools/lang/sq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/filetools/lang/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/filetools/lang/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/filetools/lang/ug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/filetools/lang/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/filetools/lang/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/filetools/lang/zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/filetools/plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/icons_hidpi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/image/dialogs/image.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/image/images/noimage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/link/dialogs/anchor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/link/dialogs/link.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/link/images/anchor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/link/images/hidpi/anchor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/magicline/images/hidpi/icon-rtl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/magicline/images/hidpi/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/magicline/images/icon-rtl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/magicline/images/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/pastefromword/filter/default.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/popup/plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/scayt/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/scayt/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/scayt/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/scayt/dialogs/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/scayt/dialogs/options.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/scayt/dialogs/toolbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/af.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/az.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/cy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/de-ch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/en-au.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/en-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/en-gb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/eo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/es-mx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/fr-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/km.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/ku.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/no.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/oc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/pt-br.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/si.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/sq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/tt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/ug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/lang/zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/specialchar/dialogs/specialchar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/table/dialogs/table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/tableselection/styles/tableselection.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/tabletools/dialogs/tableCell.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/widget/images/handle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/wsc/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/wsc/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/wsc/dialogs/ciframe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/wsc/dialogs/wsc.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/wsc/dialogs/wsc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/wsc/dialogs/wsc_ie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/css/samples.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/img/github-top.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/img/header-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/img/header-separator.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/img/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/img/navigation-tip.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/js/sample.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/js/sf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/old/ajax.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/old/api.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/old/appendto.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/old/assets/inlineall/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/old/assets/outputxhtml/outputxhtml.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/old/assets/posteddata.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/old/assets/sample.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/old/assets/uilanguages/languages.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/old/datafiltering.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/old/dialog/assets/my_dialog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/old/dialog/dialog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/old/divreplace.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/old/enterkey/enterkey.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/old/htmlwriter/assets/outputforflash/outputforflash.fla" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/old/htmlwriter/assets/outputforflash/outputforflash.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/old/htmlwriter/assets/outputforflash/swfobject.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/old/htmlwriter/outputforflash.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/old/htmlwriter/outputhtml.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/old/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/old/inlineall.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/old/inlinebycode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/old/inlinetextarea.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/old/jquery.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/old/magicline/magicline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/old/readonly.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/old/replacebyclass.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/old/replacebycode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/old/sample.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/old/sample.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/old/sample_posteddata.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/old/tabindex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/old/toolbar/toolbar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/old/uicolor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/old/uilanguages.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/old/wysiwygarea/fullpage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/old/xhtmlstyle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/toolbarconfigurator/css/fontello.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/toolbarconfigurator/font/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/toolbarconfigurator/font/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/toolbarconfigurator/font/fontello.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/toolbarconfigurator/font/fontello.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/toolbarconfigurator/font/fontello.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/toolbarconfigurator/font/fontello.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/toolbarconfigurator/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/toolbarconfigurator/js/abstracttoolbarmodifier.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/toolbarconfigurator/js/fulltoolbareditor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/toolbarconfigurator/js/toolbarmodifier.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/samples/toolbarconfigurator/js/toolbartextmodifier.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/skins/moono-lisa/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/skins/moono-lisa/dialog_ie.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/skins/moono-lisa/dialog_ie8.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/skins/moono-lisa/dialog_iequirks.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/skins/moono-lisa/editor.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/skins/moono-lisa/editor_gecko.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/skins/moono-lisa/editor_ie.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/skins/moono-lisa/editor_ie8.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/skins/moono-lisa/editor_iequirks.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/skins/moono-lisa/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/skins/moono-lisa/icons_hidpi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/skins/moono-lisa/images/arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/skins/moono-lisa/images/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/skins/moono-lisa/images/hidpi/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/skins/moono-lisa/images/hidpi/lock-open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/skins/moono-lisa/images/hidpi/lock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/skins/moono-lisa/images/hidpi/refresh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/skins/moono-lisa/images/lock-open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/skins/moono-lisa/images/lock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/skins/moono-lisa/images/refresh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/skins/moono-lisa/images/spinner.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/skins/moono-lisa/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/static/ckeditor/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/templates/main/_article_sidebar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/templates/main/article.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/templates/main/article_comment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/templates/main/collectors_article.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/templates/main/create_article.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/templates/main/show_tag_article.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/templates/user/article_collections.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/templates/user/article_index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/templates/user/collections.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/templates/user/followers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myambumy/templates/user/following.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Myambumy/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Myambumy/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Myambumy/blueprints/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Myambumy/blueprints/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Myambumy/blueprints/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/Myambumy/blueprints/user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Myambumy/decorations.py" beforeDir="false" afterPath="$PROJECT_DIR$/Myambumy/decorations.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Myambumy/extensions.py" beforeDir="false" afterPath="$PROJECT_DIR$/Myambumy/extensions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myambumy/fakes.py" beforeDir="false" afterPath="$PROJECT_DIR$/Myambumy/fakes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myambumy/forms/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Myambumy/forms/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Myambumy/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Myambumy/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Myambumy/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Myambumy/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Myambumy/static/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Myambumy/static/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myambumy/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Myambumy/static/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Myambumy/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Myambumy/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Myambumy/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/Myambumy/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myambumy/templates/macros.html" beforeDir="false" afterPath="$PROJECT_DIR$/Myambumy/templates/macros.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myambumy/templates/main/_comment.html" beforeDir="false" afterPath="$PROJECT_DIR$/Myambumy/templates/main/_comment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myambumy/templates/main/_photo_sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/Myambumy/templates/main/_photo_sidebar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myambumy/templates/main/tag.html" beforeDir="false" afterPath="$PROJECT_DIR$/Myambumy/templates/main/tag.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myambumy/templates/user/_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/Myambumy/templates/user/_header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data-dev.db" beforeDir="false" afterPath="$PROJECT_DIR$/data-dev.db" afterDir="false" />
     </list>
@@ -57,19 +476,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Myambumy/static/js/script.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="722">
-              <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Myambumy/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="169" column="27" selection-start-line="169" selection-start-column="27" selection-end-line="169" selection-end-column="27" />
+            <state relative-caret-position="266">
+              <caret line="289" column="26" selection-start-line="289" selection-start-column="13" selection-end-line="289" selection-end-column="26" />
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
               </folding>
@@ -77,20 +487,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.flaskenv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="21" lean-forward="true" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Myambumy/blueprints/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1767">
-              <caret line="101" selection-start-line="101" selection-end-line="101" />
+            <state relative-caret-position="86">
+              <caret line="397" column="45" selection-start-line="397" selection-start-column="45" selection-end-line="397" selection-end-column="45" />
               <folding>
                 <element signature="e#0#112#0" expanded="true" />
               </folding>
@@ -99,38 +500,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Myambumy/fakes.py">
+        <entry file="file://$PROJECT_DIR$/Myambumy/blueprints/user.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1691">
-              <caret line="96" column="71" selection-start-line="96" selection-start-column="71" selection-end-line="96" selection-end-column="71" />
+            <state relative-caret-position="297">
+              <caret line="99" column="102" selection-start-line="99" selection-start-column="94" selection-end-line="99" selection-end-column="102" />
               <folding>
-                <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#0#86#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Myambumy/templates/main/_photo_sidebar.html">
+        <entry file="file://$PROJECT_DIR$/Myambumy/templates/main/show_tag_article.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2204">
-              <caret line="116" column="30" selection-start-line="116" selection-start-column="30" selection-end-line="116" selection-end-column="30" />
-              <folding>
-                <element signature="e#186#192#0" expanded="true" />
-                <element signature="e#342#348#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="228">
+              <caret line="30" column="21" lean-forward="true" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Myambumy/__init__.py">
+        <entry file="file://$PROJECT_DIR$/Myambumy/templates/main/tag.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2280">
-              <caret line="133" column="55" selection-start-line="133" selection-start-column="55" selection-end-line="133" selection-end-column="55" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-266">
+              <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -147,14 +541,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>resend_confirm_email</find>
-      <find>ALBUMY_ADMIN_EMAIL</find>
-      <find>url_for</find>
-      <find>delete_photo</find>
+      <find>role</find>
+      <find>edit</find>
+      <find>Photo</find>
+      <find>collected_article</find>
+      <find>user</find>
+      <find>collexted_id</find>
+      <find>collexted</find>
+      <find>collected_id</find>
+      <find>Collect</find>
+      <find>User</find>
+      <find>sho</find>
+      <find>_tag</find>
+      <find>_collect</find>
+      <find>uncoll</find>
+      <find>show_collectors</find>
+      <find>is_</find>
+      <find>collecte</find>
       <find>tag</find>
-      <find>new_tag</find>
-      <find>show</find>
-      <find>user.</find>
+      <find>collected_article_id</find>
+      <find>collect_article</find>
+      <find>show_collectors_article</find>
+      <find>uncollect_article</find>
+      <find>create</find>
+      <find>uplo</find>
+      <find>collect</find>
+      <find>photo</find>
+      <find>show_collections</find>
+      <find>show_tag</find>
+      <find>set-comment</find>
+      <find>collectors</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -163,17 +579,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/extensions.py" />
-        <option value="$PROJECT_DIR$/models.py" />
-        <option value="$PROJECT_DIR$/Myambumy/blueprints/admin.py" />
-        <option value="$PROJECT_DIR$/.flaskenv" />
-        <option value="$PROJECT_DIR$/Myambumy/templates/index.html" />
-        <option value="$PROJECT_DIR$/Myambumy/templates/register.html" />
-        <option value="$PROJECT_DIR$/Myambumy/templates/main/index.html" />
-        <option value="$PROJECT_DIR$/Myambumy/templates/auth/register.html" />
-        <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/Myambumy/templates/auth/login.html" />
-        <option value="$PROJECT_DIR$/Myambumy/templates/emails/confirm.html" />
         <option value="$PROJECT_DIR$/Myambumy/templates/emails/confirm.txt" />
         <option value="$PROJECT_DIR$/Myambumy/templates/auth/text.html" />
         <option value="$PROJECT_DIR$/Myambumy/templates/auth/reset_password.html" />
@@ -193,32 +598,46 @@
         <option value="$PROJECT_DIR$/Myambumy/extensions.py" />
         <option value="$PROJECT_DIR$/Myambumy/settings.py" />
         <option value="$PROJECT_DIR$/Myambumy/templates/models.html" />
-        <option value="$PROJECT_DIR$/Myambumy/forms/main.py" />
-        <option value="$PROJECT_DIR$/Myambumy/blueprints/user.py" />
         <option value="$PROJECT_DIR$/Myambumy/templates/user/index.html" />
-        <option value="$PROJECT_DIR$/Myambumy/templates/user/_header.html" />
-        <option value="$PROJECT_DIR$/Myambumy/templates/main/photo.html" />
-        <option value="$PROJECT_DIR$/Myambumy/utils.py" />
-        <option value="$PROJECT_DIR$/Myambumy/templates/main/tag.html" />
-        <option value="$PROJECT_DIR$/Myambumy/templates/base.html" />
         <option value="$PROJECT_DIR$/Myambumy/templates/main/profile_popup.html" />
         <option value="$PROJECT_DIR$/Myambumy/static/js/script.js" />
         <option value="$PROJECT_DIR$/Myambumy/blueprints/ajax.py" />
-        <option value="$PROJECT_DIR$/Myambumy/templates/main/_comment.html" />
-        <option value="$PROJECT_DIR$/Myambumy/templates/main/_photo_sidebar.html" />
         <option value="$PROJECT_DIR$/Myambumy/templates/main/collectors.html" />
+        <option value="$PROJECT_DIR$/Myambumy/templates/user/followers.html" />
+        <option value="$PROJECT_DIR$/Myambumy/templates/user/following.html" />
+        <option value="$PROJECT_DIR$/Myambumy/utils.py" />
+        <option value="$PROJECT_DIR$/Myambumy/templates/main/create_article.html" />
+        <option value="$PROJECT_DIR$/Myambumy/forms/main.py" />
+        <option value="$PROJECT_DIR$/Myambumy/templates/user/articles.html" />
+        <option value="$PROJECT_DIR$/Myambumy/templates/user/article_index.html" />
+        <option value="$PROJECT_DIR$/Myambumy/static/css/style.css" />
         <option value="$PROJECT_DIR$/Myambumy/templates/macros.html" />
+        <option value="$PROJECT_DIR$/Myambumy/templates/main/photo.html" />
+        <option value="$PROJECT_DIR$/Myambumy/templates/main/_comment.html" />
+        <option value="$PROJECT_DIR$/Myambumy/templates/main/article_comment.html" />
+        <option value="$PROJECT_DIR$/Myambumy/templates/main/article.html" />
+        <option value="$PROJECT_DIR$/Myambumy/templates/main/_photo_sidebar.html" />
+        <option value="$PROJECT_DIR$/Myambumy/templates/main/tag.html" />
         <option value="$PROJECT_DIR$/Myambumy/fakes.py" />
-        <option value="$PROJECT_DIR$/Myambumy/blueprints/main.py" />
         <option value="$PROJECT_DIR$/Myambumy/__init__.py" />
+        <option value="$PROJECT_DIR$/Myambumy/templates/main/_article_sidebar.html" />
         <option value="$PROJECT_DIR$/Myambumy/models.py" />
+        <option value="$PROJECT_DIR$/Myambumy/templates/main/collectors_article.html" />
+        <option value="$PROJECT_DIR$/Myambumy/templates/user/collections.html" />
+        <option value="$PROJECT_DIR$/Myambumy/blueprints/user.py" />
+        <option value="$PROJECT_DIR$/Myambumy/templates/user/article_collections.html" />
+        <option value="$PROJECT_DIR$/Myambumy/templates/user/_header.html" />
+        <option value="$PROJECT_DIR$/Myambumy/templates/base.html" />
+        <option value="$PROJECT_DIR$/Myambumy/templates/main/show_tag_article.html" />
+        <option value="$PROJECT_DIR$/Myambumy/blueprints/main.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="950" />
-    <option name="width" value="980" />
-    <option name="height" value="1090" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="595" />
+    <option name="y" value="111" />
+    <option name="width" value="978" />
+    <option name="height" value="1089" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -228,7 +647,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -245,6 +663,18 @@
               <item name="Myambumy" type="b2602c69:ProjectViewProjectNode" />
               <item name="Myambumy" type="462c0819:PsiDirectoryNode" />
               <item name="Myambumy" type="462c0819:PsiDirectoryNode" />
+              <item name="blueprints" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Myambumy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Myambumy" type="462c0819:PsiDirectoryNode" />
+              <item name="Myambumy" type="462c0819:PsiDirectoryNode" />
+              <item name="forms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Myambumy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Myambumy" type="462c0819:PsiDirectoryNode" />
+              <item name="Myambumy" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -253,6 +683,13 @@
               <item name="Myambumy" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Myambumy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Myambumy" type="462c0819:PsiDirectoryNode" />
+              <item name="Myambumy" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Myambumy" type="b2602c69:ProjectViewProjectNode" />
@@ -266,27 +703,29 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Myambumy" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Myambumy/static" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\Flask\Myambumy\Myambumy" />
-      <recent name="F:\Flask\Myambumy\Myambumy\templates" />
-      <recent name="F:\Flask\Myambumy" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\Flask\Myambumy\Myambumy\templates\main" />
       <recent name="F:\Flask\Myambumy\Myambumy\templates\auth" />
       <recent name="F:\Flask\Myambumy\Myambumy" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Flask\Myambumy\Myambumy\static" />
+      <recent name="F:\Flask\Myambumy\Myambumy" />
+      <recent name="F:\Flask\Myambumy\Myambumy\templates" />
+      <recent name="F:\Flask\Myambumy" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -322,18 +761,29 @@
       <workItem from="1556673649959" duration="7243000" />
       <workItem from="1556929125120" duration="9530000" />
       <workItem from="1557323668959" duration="671000" />
-      <workItem from="1557537364585" duration="1195000" />
+      <workItem from="1557537364585" duration="28933000" />
+      <workItem from="1557643551567" duration="10100000" />
+      <workItem from="1557714016384" duration="72776000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="175802000" />
+    <option name="totallyTimeSpent" value="286416000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.092493296" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19168901" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -342,21 +792,21 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32963988" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.2927171" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.22022161" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.29224378" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.37257618" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="11" />
+      <window_info anchor="bottom" id="Python Console" order="11" weight="0.32963988" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" weight="0.32734805" />
-      <window_info anchor="right" id="SciView" order="4" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.3292011" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32707775" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.36237898" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19168901" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -365,83 +815,24 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32963988" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.2927171" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.19529086" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.29224378" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.22022161" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="11" />
+      <window_info anchor="bottom" id="Python Console" order="11" weight="0.32963988" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" weight="0.32734805" />
-      <window_info anchor="right" id="SciView" order="4" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.3292011" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32707775" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Myambumy/templates/auth/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Pipfile.lock">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="59" column="28" lean-forward="true" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="32" lean-forward="true" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Myambumy/templates/auth/text.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Myambumy/templates/emails/reset_password.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="57" selection-end-line="4" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Myambumy/templates/emails/confirm.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Myambumy/templates/emails/reset_password.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" lean-forward="true" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Myambumy/templates/emails/confirm.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="72" selection-start-line="8" selection-start-column="72" selection-end-line="8" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Myambumy/templates/auth/reset_password.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="318">
@@ -528,43 +919,6 @@
     <entry file="file://$PROJECT_DIR$/Myambumy/templates/errors/400.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Myambumy/forms/auth.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="34" column="103" selection-start-line="34" selection-start-column="103" selection-end-line="34" selection-end-column="103" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Myambumy/decorations.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Myambumy/extensions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-31">
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Myambumy/forms/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Pipfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
@@ -572,72 +926,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Myambumy/templates/user/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Myambumy/templates/user/_header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Myambumy/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Myambumy/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="91" column="16" selection-start-line="91" selection-start-column="4" selection-end-line="91" selection-end-column="16" />
-          <folding>
-            <element signature="e#115#125#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Myambumy/templates/main/tag.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="42" lean-forward="true" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Myambumy/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="54" column="101" lean-forward="true" selection-start-line="54" selection-start-column="101" selection-end-line="54" selection-end-column="101" />
-          <folding>
-            <element signature="e#2370#2376#0" expanded="true" />
-            <element signature="e#2376#2382#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Myambumy/templates/main/upload.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Myambumy/blueprints/user.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="50" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#63#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -658,85 +950,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Myambumy/templates/main/photo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="17" column="91" selection-start-line="17" selection-start-column="91" selection-end-line="17" selection-end-column="91" />
-          <folding>
-            <element signature="e#3131#3138#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Myambumy/templates/main/_comment.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="68" column="35" selection-start-line="68" selection-start-column="35" selection-end-line="68" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Myambumy/templates/macros.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Myambumy/templates/main/collectors.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Myambumy/static/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Myambumy/blueprints/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1767">
-          <caret line="101" selection-start-line="101" selection-end-line="101" />
-          <folding>
-            <element signature="e#0#112#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Myambumy/fakes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1691">
-          <caret line="96" column="71" selection-start-line="96" selection-start-column="71" selection-end-line="96" selection-end-column="71" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Myambumy/templates/main/_photo_sidebar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2204">
-          <caret line="116" column="30" selection-start-line="116" selection-start-column="30" selection-end-line="116" selection-end-column="30" />
-          <folding>
-            <element signature="e#186#192#0" expanded="true" />
-            <element signature="e#342#348#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Myambumy/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2280">
-          <caret line="133" column="55" selection-start-line="133" selection-start-column="55" selection-end-line="133" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.flaskenv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -744,12 +957,282 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/static/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/templates/user/following.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/templates/user/followers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="61" selection-start-line="13" selection-start-column="61" selection-end-line="13" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/decorations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1026">
+          <caret line="63" column="42" selection-start-line="63" selection-start-column="42" selection-end-line="63" selection-end-column="42" />
+          <folding>
+            <element signature="e#115#125#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/extensions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/static/ckeditor/lang/af.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/forms/auth.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="71" selection-start-line="3" selection-start-column="65" selection-end-line="3" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="88" column="17" selection-start-line="88" selection-start-column="17" selection-end-line="88" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/templates/user/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/templates/user/article_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/templates/macros.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/forms/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="29" lean-forward="true" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/templates/main/_comment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="47" column="71" selection-start-line="47" selection-start-column="58" selection-end-line="47" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/templates/main/photo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+          <folding>
+            <element signature="e#3131#3138#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/fakes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="125" selection-start-line="125" selection-end-line="125" />
+          <folding>
+            <element signature="e#188#197#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/templates/main/article.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-152">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/templates/main/article_comment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="29" column="59" selection-start-line="29" selection-start-column="59" selection-end-line="29" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/templates/main/_article_sidebar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="62" column="64" selection-start-line="62" selection-start-column="47" selection-end-line="62" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/templates/user/collections.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="10" column="111" selection-start-line="10" selection-start-column="105" selection-end-line="10" selection-end-column="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/templates/main/create_article.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/templates/user/_header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="36" column="108" lean-forward="true" selection-start-line="36" selection-start-column="108" selection-end-line="36" selection-end-column="108" />
+          <folding>
+            <element signature="e#664#670#0" expanded="true" />
+            <element signature="e#670#676#0" expanded="true" />
+            <element signature="e#938#944#0" expanded="true" />
+            <element signature="e#944#950#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="49" column="68" lean-forward="true" selection-start-line="49" selection-start-column="68" selection-end-line="49" selection-end-column="68" />
+          <folding>
+            <element signature="e#2370#2376#0" expanded="true" />
+            <element signature="e#2376#2382#0" expanded="true" />
+            <element signature="e#2573#2579#0" expanded="true" />
+            <element signature="e#2579#2585#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/templates/main/_photo_sidebar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="107" column="79" selection-start-line="107" selection-start-column="79" selection-end-line="107" selection-end-column="79" />
+          <folding>
+            <element signature="e#186#192#0" expanded="true" />
+            <element signature="e#342#348#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/templates/main/collectors.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/templates/main/collectors_article.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="18" column="63" lean-forward="true" selection-start-line="18" selection-start-column="63" selection-end-line="18" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/templates/user/article_collections.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/blueprints/user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="99" column="102" selection-start-line="99" selection-start-column="94" selection-end-line="99" selection-end-column="102" />
+          <folding>
+            <element signature="e#0#86#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/templates/main/tag.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-266">
+          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/templates/main/show_tag_article.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="30" column="21" lean-forward="true" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Myambumy/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="169" column="27" selection-start-line="169" selection-start-column="27" selection-end-line="169" selection-end-column="27" />
+        <state relative-caret-position="266">
+          <caret line="289" column="26" selection-start-line="289" selection-start-column="13" selection-end-line="289" selection-end-column="26" />
           <folding>
             <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Myambumy/blueprints/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="397" column="45" selection-start-line="397" selection-start-column="45" selection-end-line="397" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#112#0" expanded="true" />
           </folding>
         </state>
       </provider>

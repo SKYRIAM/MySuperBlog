@@ -85,7 +85,10 @@ footer {
     width: 180px;
     height: 180px;
 }
-
+.article-card{
+    padding: 5px;
+    float: left;
+}
 /* list item */
 .photo-card {
     float: left;

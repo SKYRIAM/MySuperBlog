@@ -19,6 +19,7 @@ pil = "*"
 pillow = "*"
 flask-avatars = "*"
 faker = "*"
+flask-ckeditor = "*"
 
 [requires]
 python_version = "3.6"

@@ -1,57 +1,90 @@
+# -*- coding: utf-8 -*-
+"""
+    :author: Grey Li (李辉)
+    :url: http://greyli.com
+    :copyright: © 2018 Grey Li <withlihui@gmail.com>
+    :license: MIT, see LICENSE for more details.
+"""
 import os
 import random
-from flask import current_app
-from faker import Faker
-from Myambumy.models import User,Comment,Tag,Photo,Collect
-from Myambumy.extensions import db
+
 from PIL import Image
+from faker import Faker
+from flask import current_app
 from sqlalchemy.exc import IntegrityError
 
+from Myambumy.extensions import db
+from Myambumy.models import User, Photo, Tag, Comment,Article
+
 fake = Faker()
-#创建管理员
+
+
 def fake_admin():
-    admin = User(
-        name='Steave',
-        username='Buck',
-        email='putdowncat@163.com',
-        bio=fake.sentence(),
-        website='http://123456.com',
-        confirmed=True
-        )
+    admin = User(name='WUMENG',
+                 username='wumeng',
+                 email='putdowncat@163.com',
+                 bio=fake.sentence(),
+                 website='http://wumeng.com',
+                 confirmed=True)
     admin.set_password('12345678')
     db.session.add(admin)
     db.session.commit()
-#创建用户
 
-def fake_users(count=10):
+
+def fake_user(count=10):
     for i in range(count):
-        user = User(
-            name=fake.name(),
-            confirmed=True,
-            username=fake.user_name(),
-            bio=fake.sentence(),
-            location=fake.city(),
-            website=fake.url(),
-            member_since=fake.date_this_decade(),
-            email=fake.email())
+        user = User(name=fake.name(),
+                    confirmed=True,
+                    username=fake.user_name(),
+                    bio=fake.sentence(),
+                    location=fake.city(),
+                    website=fake.url(),
+                    member_since=fake.date_this_decade(),
+                    email=fake.email())
         user.set_password('123456')
         db.session.add(user)
-    try:
-        db.session.commit()
-    except IntegrityError:
-        db.session.rollback()
+        try:
+            db.session.commit()
+        except IntegrityError:
+            db.session.rollback()
 
-#创建标签
+
+def fake_follow(count=30):
+    for i in range(count):
+        user = User.query.get(random.randint(1, User.query.count()))
+        user.follow(User.query.get(random.randint(1, User.query.count())))
+    db.session.commit()
+
+
 def fake_tag(count=20):
     for i in range(count):
-        tag = Tag(name = fake.word())
+        tag = Tag(name=fake.word())
         db.session.add(tag)
-    try:
-        db.session.commit()
-    except IntegrityError:
-        db.session.rollback()
-#创建图片
+        try:
+            db.session.commit()
+        except IntegrityError:
+            db.session.rollback()
+
+def fake_article(count=30):
+    for i in range(count):
+        article = Article(
+
+            title = fake.word(),
+            content = fake.text(2000),
+            author=User.query.get(random.randint(1, User.query.count())),
+            timestamp=fake.date_time_this_year()
+
+        )
+        db.session.add(article)
+        for j in range(random.randint(1, 5)):
+            tag = Tag.query.get(random.randint(1, Tag.query.count()))
+            if tag not in article.tags:
+                article.tags.append(tag)
+
+    db.session.commit()
+
 def fake_photo(count=30):
+    # photos
     upload_path = current_app.config['ALBUMY_UPLOAD_PATH']
     for i in range(count):
         print(i)
@@ -80,22 +113,39 @@ def fake_photo(count=30):
     db.session.commit()
 
 
-def fake_comment(count=30):
+def fake_collect(count=50):
+    for i in range(count):
+        user = User.query.get(random.randint(1, User.query.count()))
+        user.collect(Photo.query.get(random.randint(1, Photo.query.count())))
+
+    for i in range(count):
+        user = User.query.get(random.randint(1, User.query.count()))
+        user.collect_article(Article.query.get(random.randint(1, Article.query.count())))
+
+
+
+    db.session.commit()
+
+
+def fake_comment(count=100):
+    #生成照片评论
     for i in range(count):
         comment = Comment(
-            author=User.query.get(random.randint(1,User.query.count())),
-            body = fake.sentence(),
+            author=User.query.get(random.randint(1, User.query.count())),
+            body=fake.sentence(),
             timestamp=fake.date_time_this_year(),
             photo=Photo.query.get(random.randint(1, Photo.query.count()))
         )
         db.session.add(comment)
+
+    #生成文章评论
+        comment2 = Comment(
+            author=User.query.get(random.randint(1, User.query.count())),
+            body=fake.sentence(),
+            timestamp=fake.date_time_this_year(),
+
+            article=Article.query.get(random.randint(1, Article.query.count()))
+        )
+        db.session.add(comment2)
+
     db.session.commit()
-
-def fake_collect(count=50):
-    for i in range(count):
-        user = User.query.get(random.randint(1, User.query.count()))
-        photo = Photo.query.get(random.randint(1, Photo.query.count()))
-        user.collect(photo)
-
-    db.session.commit()
-
