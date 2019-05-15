@@ -3,7 +3,7 @@ from Myambumy.models import User,Photo,Collect,Article,Collect_article
 from flask_login import current_user,login_required
 from Myambumy.decorations import confirm_required,permission_required
 from Myambumy.utils import redirect_back
-
+from Myambumy.notifications import push_follow_notification,push_collect_notification,push_comment_notification
 user_bp  = Blueprint('user',__name__)
 
 
@@ -42,6 +42,7 @@ def follow(username):
 
     current_user.follow(user)
     flash('User followed.', 'success')
+    push_follow_notification(follower=current_user, receiver=user)
     return redirect_back()
 
 

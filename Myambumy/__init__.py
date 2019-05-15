@@ -12,7 +12,8 @@ from Myambumy.emails import  send_confirm_email
 from Myambumy.utils import generate_token,vaildate_token
 from flask_wtf.csrf import  CSRFError
 from Myambumy.fakes import fake_admin,fake_comment,fake_photo,fake_tag,fake_user,fake_collect,fake_follow,fake_article
-from Myambumy.models import Article,Photo,Tag,Collect,Collect_article
+from Myambumy.models import Article,Photo,Tag,Collect,Collect_article,Notification
+from flask_login import current_user
 
 def create_app(config_name=None):
     if config_name is None:
@@ -51,10 +52,18 @@ def register_blueprints(app):
 def register_shell_context(app):
     @app.shell_context_processor
     def make_shell_context():
-        return dict(db=db,User=User,generate_token=generate_token,Article=Article,Tag=Tag,Photo=Photo,Collect=Collect,Collect_article=Collect_article)
+        return dict(db=db,User=User,generate_token=generate_token,Article=Article,Tag=Tag,Photo=Photo,Collect=Collect,Collect_article=Collect_article,
+                    Notification=Notification)
+
 
 def register_template_context(app):
-    pass
+    @app.context_processor
+    def make_template_context():
+        if current_user.is_authenticated:
+            notification_count = Notification.query.with_parent(current_user).filter_by(is_read=False).count()
+        else:
+            notification_count = None
+        return dict(notification_count=notification_count)
 
 def register_errorhandlers(app):
     @app.errorhandler(400)

@@ -1,5 +1,5 @@
 from flask import Blueprint,render_template,request,current_app,send_from_directory,flash,redirect,url_for,abort
-from Myambumy.models import User,Photo,Comment,Tag,Collect,Article,Collect_article
+from Myambumy.models import User,Photo,Comment,Tag,Collect,Article,Collect_article,Notification
 from Myambumy.decorations import confirm_required,permission_required
 from flask_login import  login_required,current_user
 from Myambumy.utils import resize_image,rename_image,flash_errors
@@ -7,6 +7,7 @@ import os
 from Myambumy.forms.main import CommentForm
 from Myambumy.extensions import db
 from Myambumy.forms.main import DescriptionForm,TagForm,ArticleForm
+from Myambumy.notifications import push_comment_notification,push_collect_notification,push_comment_notification_article
 main_bp  = Blueprint('main',__name__)
 
 @main_bp.route('/')
@@ -62,6 +63,8 @@ def collect(photo_id):
         return redirect(url_for('.show_photo', photo_id=photo_id))
     current_user.collect(photo)
     flash('Photo collected ','info')
+    if current_user != photo.author:
+        push_collect_notification(collector=current_user, photo_id=photo_id, receiver=photo.author)
     return redirect(url_for('.show_photo', photo_id=photo_id))
 
 #收藏文章
@@ -376,12 +379,23 @@ def new_comment(photo_id):
             comment = Comment(body=body, author=author, photo=photo)
 
         replied_id = request.args.get('reply')
-        print("pppppppppppppppppppppppppppppppppp",replied_id)
+        #print("pppppppppppppppppppppppppppppppppp",replied_id)
         if replied_id:
             comment.replied = Comment.query.get_or_404(replied_id)
+            if request.args.get('type') == 'article':
+                push_comment_notification_article(article_id=photo_id,receiver=comment.replied.author)
+            else:
+                push_comment_notification(photo_id=photo.id, receiver=comment.replied.author)
         db.session.add(comment)
         db.session.commit()
         flash('Comment published.', 'success')
+
+        if request.args.get('type') == 'article':
+            if current_user != article.author:
+                push_comment_notification_article(photo_id, receiver=article.author, page=page)
+        else:
+            if current_user != photo.author:
+                push_comment_notification(photo_id, receiver=photo.author, page=page)
 
     flash_errors(form)
 
@@ -523,5 +537,40 @@ def report_article(article_id):
     db.session.commit()
     flash('Article reported ', 'success')
     return redirect(url_for('.show_article', article_id=article_id))
+#消息界面
+@main_bp.route('/notifications')
+@login_required
+def show_notifications():
+    page = request.args.get('page', 1, type=int)
+    per_page = current_app.config['ALBUMY_NOTIFICATION_PER_PAGE']
+    notifications = Notification.query.with_parent(current_user)
+    filter_rule = request.args.get('filter')
+    if filter_rule == 'unread':
+        notifications = notifications.filter_by(is_read=False)
+
+    pagination = notifications.order_by(Notification.timestamp.desc()).paginate(page, per_page)
+    notifications = pagination.items
+    return render_template('main/notifications.html', pagination=pagination, notifications=notifications)
 
 
+@main_bp.route('/notification/read/<int:notification_id>', methods=['POST'])
+@login_required
+def read_notification(notification_id):
+    notification = Notification.query.get_or_404(notification_id)
+    if current_user != notification.receiver:
+        abort(403)
+
+    notification.is_read = True
+    db.session.commit()
+    flash('Notification archived.', 'success')
+    return redirect(url_for('.show_notifications'))
+
+
+@main_bp.route('/notifications/read/all', methods=['POST'])
+@login_required
+def read_all_notification():
+    for notification in current_user.notifications:
+        notification.is_read = True
+    db.session.commit()
+    flash('All notifications archived.', 'success')
+    return redirect(url_for('.show_notifications'))

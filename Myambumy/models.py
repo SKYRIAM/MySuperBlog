@@ -87,7 +87,16 @@ class Follow(db.Model):
     followed = db.relationship('User', foreign_keys=[followed_id], back_populates='followers', lazy='joined')
 
 
+#创建消息提醒
+class Notification(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    message = db.Column(db.Text, nullable=False)
+    is_read = db.Column(db.Boolean, default=False)
+    timestamp = db.Column(db.DateTime, default=datetime.utcnow, index=True)
 
+    receiver_id = db.Column(db.Integer, db.ForeignKey('user.id'))
+
+    receiver = db.relationship('User', back_populates='notifications')
 
 
 
@@ -118,6 +127,8 @@ class User(db.Model,UserMixin):
     #收藏
     collections = db.relationship('Collect', back_populates='collector', cascade='all')
     collections_article = db.relationship('Collect_article', back_populates='collector', cascade='all')
+    #消息提醒
+    notifications = db.relationship('Notification', back_populates='receiver', cascade='all')
     #关注
     following = db.relationship('Follow', foreign_keys=[Follow.follower_id], back_populates='follower',
                                 lazy='dynamic', cascade='all')
